@@ -18,7 +18,7 @@ export default function Hero(props) {
     return (
         <section className="container pt-4">
             <div className="row align-items-center">
-                <div className="col-auto pl-5" style={{ width: 530 }}>
+                <div className="col-auto pl-4" style={{ width: 530 }}>
                     <h1 className="font-weight-bold line-height-1 mb-3">
                         Forget Busy Work, <br/>
                         Start Next Vacation
