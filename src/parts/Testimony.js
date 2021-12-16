@@ -5,12 +5,13 @@ import Button from 'elements/Button'
 import Fade from 'react-reveal/Fade';
 export default function Testimony({data}) {
     return (
+        
         <Fade bottom>
         <section className="container">
             <div className="row align-items-center">
-                <div className="col-auto" style={{marginRight: 70}}>
-                    <div className="testimonial-hero" style={{margin: `30px 0 0 30px`}}>
-                        <img src={data.imageUrl} alt="Testmonial" className="position-absolute" style={{zIndex: 1}} />
+                <div className="col-auto" style={{marginRight: 60}}>
+                    <div className="testimonial-hero" style={{ margin: `30px 0 0 30px`}}>
+                        <img src={`${process.env.REACT_APP_HOST}/${data.imageUrl}`} alt="Testmonial" className="position-absolute" style={{zIndex: 1}} />
                         <img src={TestimonyAccent} alt="Testimonial frame" className="position-absolute" style={{margin: `-30px 0 0 -30px`}}/>
                     </div>
                 </div>
